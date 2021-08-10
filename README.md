@@ -1,1 +1,0 @@
-https://Chapchik.github.io/rsschool-cv/cv
