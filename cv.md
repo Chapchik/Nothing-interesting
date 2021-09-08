@@ -20,5 +20,5 @@ Kyiv National Economic University named after Vadym Hetman
 
 ## Languages
 * English - Pre-Inermediate (A2)
-* Russian - Native
-* Ukrainian - Native
+* Russian - Native (C2)
+* Ukrainian - Native (C2)
