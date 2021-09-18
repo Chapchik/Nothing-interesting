@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 a {
     text-decoration: none;
     display: inline-block;
@@ -42,7 +45,7 @@ header {
     color: #e1e1f7;
     font-size: 16px;
     line-height: 24px;
-    padding: 0px 16px;
+    padding: 0px 15px;
     transition: all .3s;
 }
 .header__nav a:hover {
@@ -78,9 +81,9 @@ header {
     background-color: #fff;
     box-shadow: 0 2px 10px rgba(0,0,0,.2);
 }
-img {
+.about__me__left img {
     width: 200px;
-    border-radius: 15%;
+    border-radius: 5%;
     margin-top: 5px;
 }
 .about__me__left {
@@ -104,9 +107,11 @@ img {
 .about__me__title {
     text-align: center;
     font-size: 48px;
+    line-height: 36px;
 }
 .my__technical__skills__inner,
 .my__projects__inner,
+.my__code__example__inner,
 .my__experience__inner, 
 .my__education__inner,
 .my__languages__inner,
@@ -116,6 +121,7 @@ img {
 }
 .my__technical__skills__title,
 .my__projects__title,
+.my__code__example__title,
 .my__experience__title,
 .my__education__title,
 .my__languages__title,
@@ -124,6 +130,7 @@ img {
     color: #3636ff;
 }
 .my__technical__skills__text,
+.my__projects__text__inner,
 .my__languages__text,
 .my__contacts__text {
     background-color: #FFFFFF;
@@ -132,6 +139,19 @@ img {
     padding: 20px 50px 20px 65px;
     line-height: 36px;
     box-shadow: 0 2px 10px rgba(0,0,0,.2);
+}
+.my__projects__text__inner p {
+    line-height: 24px;
+}
+.my__projects__text__inner h4 {
+    color: #3636ff;
+}
+.my__projects__text__img {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.my__projects__text img {
+    max-width: 100%;
 }
 .my__technical__skills__text li,
 .my__languages__text li,
@@ -151,12 +171,12 @@ img {
     background-color: #3535ff;
     border-radius: 50%;
 }
-.my__projects__text pre {
-    background-color: #FFFFFF;
+.my__code__example__text pre {
+    background-color: #20205f;
     margin-left: 50px;
     margin-right: 50px;
-    padding: 20px 50px;
-    line-height: 36px;
+    padding: 15px 50px;
+    line-height: 18px;
     box-shadow: 0 2px 10px rgba(0,0,0,.2);
 }
 .my__experience__text,
@@ -169,11 +189,6 @@ img {
     box-shadow: 0 2px 10px rgba(0,0,0,.2);
     display: flex;
     justify-content: space-between;
-}
-.my__experience__left,
-.my__education__left {
-    /* font-size: 36px;
-    font-weight: 900; */
 }
 .my__experience__left__date,
 .my__education__left__date {
@@ -228,9 +243,13 @@ footer {
 } 
 .footer__github img {
     width: 45px;
+    border-radius: 15%;
+    margin-top: 5px;
 }
 .footer__rs img {
-    width: 85px;  
+    width: 85px; 
+    border-radius: 15%;
+    margin-top: 5px; 
 }
 .footer__github {
     display: inline-block;
@@ -242,4 +261,9 @@ footer {
 .footer__author {
     margin-top: 10px;
     font-size: 14px;
+    margin-left: 10px;
+}
+.nav__btn {
+    display: none;
+    font-size: 28px;
 }

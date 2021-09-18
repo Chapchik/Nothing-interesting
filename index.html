@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Dmytro Chernukha</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="js/rainbow-custom.min.js"></script>
+    <link rel="stylesheet" href="css/obsidian.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
@@ -18,10 +22,14 @@
                         <span class="header__title__name">Dmytro Chernukha</span>
                         <span class="header__title__text">/ Front-end Developer</span>
                     </div>
-                    <nav>
-                        <ul class="header__nav">
+                    <nav class="header__nav">
+                        <div class="nav__btn">
+                            <span class="icon-bars"></span>
+                        </div>
+                        <ul>
                             <li><a href="#my__technical__skills">My technical skills</a></li>
                             <li><a href="#my__projects">My projects</a></li>
+                            <li><a href="#my__code__example">Code example</a></li>
                             <li><a href="#my__experience">Experience</a></li>
                             <li><a href="#my__education">Education</a></li>
                             <li><a href="#my__languages">Languages</a></li>
@@ -75,15 +83,45 @@
                         <h3>My projects</h3>
                     </div>
                     <div class="my__projects__text">
+                        <div class="my__projects__text__inner">
+                            <h4>Law-company-website</h4>
+                            <p>A landing page for the law company. Made with flex layouts, responsive.</p>
+                            <p><i>HTML, CSS, JS</i></p>
+                        </div>
+                        <div class="my__projects__text__img">
+                        <a href="https://chapchik.github.io/law-company-website/"><img src="images/project__example.png"
+                                alt=""></a>    
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <section class="my__code__example" id="my__code__example">
+                <div class="my__code__example__inner">
+                    <div class="my__code__example__title">
+                        <h3>Code example</h3>
+                    </div>
+                    <div class="my__code__example__text">
                         <pre>
-<code>function sumDigits(num) {
-console.log(` \nNumber is ${num}`);                            
-let sum = 0;                            
-while(num) {
-    sum += num % 10;
-    num = Math.floor(num / 10);
-    }
-console.log(`  digits sum is ${sum}`);
+<code data-language="javascript">function head(array) {
+  return array[0];
+  }
+function tail(array) {
+  let result = [];
+  for (let i = 1; i &lt; array.length; i++) {
+    result.push(array[i])
+}
+  return result;
+}
+function init(array) {
+  let result = [];
+  for (let i = 0; i &lt; array.length - 1; i++) {
+    result.push(array[i]);
+}
+  return result;
+}
+function last(array) {
+  return array[array.length - 1];
 }</code>
 </pre>
                     </div>
@@ -120,7 +158,8 @@ console.log(`  digits sum is ${sum}`);
                         <div class="my__education__text">
                             <div class="my__education__left">
                                 <div class="my__education__left__date">September 2020 - February 2022 </div>
-                                <div class="my__education__left__company">Kyiv National Economic University named after
+                                <div class="my__education__left__company">Kyiv National Economic University named
+                                    after
                                     Vadym Hetman</div>
                                 <div class="my__education__right">
                                     <ul>
@@ -134,7 +173,8 @@ console.log(`  digits sum is ${sum}`);
                         <div class="my__education__text">
                             <div class="my__education__left">
                                 <div class="my__education__left__date">September 2016 - June 2019 </div>
-                                <div class="my__education__left__company">Kyiv National Economic University named after
+                                <div class="my__education__left__company">Kyiv National Economic University named
+                                    after
                                     Vadym Hetman</div>
                                 <div class="my__education__right">
                                     <ul>
@@ -189,6 +229,10 @@ console.log(`  digits sum is ${sum}`);
             </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+    console.log('Верстка валидная +10 \nВерстка семантическая +10 \nДля оформления СV используются css-стили +10 \nКонтент размещается в блоке, который горизонтально центрируется на странице +10 \nВёрстка адаптивная +10 \nЕсть адаптивное бургер-меню. +10 \nНа странице СV присутствует изображение - фото или аватарка автора CV, пропорции изображения не искажены, у изображения есть атрибут alt (может быть пустым) +10 \nКонтакты для связи и перечень навыков оформлены в виде списка ul > li +10 \nCV содержит контакты для связи, краткую информацию о себе, перечень навыков, информацию об образовании и уровне английского +10 \nCV содержит пример вашего кода +10 \nCV содержит изображения-ссылки на выполненные вами проекты. + 10 \nCV выполнено на английском языке +10 \nВыполнены требования к Pull Request + 10 \nЕсть видеорезюме автора CV на английском языке + 0 \nДизайн, оформление, качество выполнения CV не ниже чем в примерах CV + 10 \n(150/160)'  )</script>
 </body>
 
 </html>
